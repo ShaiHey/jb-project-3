@@ -1,0 +1,9 @@
+enum SocketMessages {
+    NEW_LIKE = 'NEW_LIKE',
+    REMOVE_LIKE = 'REMOVE_LIKE',
+    ADD_VACATION = 'ADD_VACATION',
+    REMOVE_VACATION = 'REMOVE_VACATION',
+    UPDATE_VACATION = 'UPDATE_VACATION'
+}
+
+export default SocketMessages;
