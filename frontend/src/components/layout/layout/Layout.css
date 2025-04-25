@@ -1,0 +1,39 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Layout > main {
+  flex: 1;
+}
+
+.AuthContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.AuthContainer > .separator-bar {
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .AuthContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .AuthContainer > .separator-bar {
+        width: 80%;
+        height: 1px;
+    }
+}

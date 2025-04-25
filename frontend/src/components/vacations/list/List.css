@@ -1,0 +1,34 @@
+.List > .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 20px 100px
+}
+
+.List > .CheckBoxContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.List > .CheckBoxContainer button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 10%;
+    transition: background-color 0.2s;
+}
+
+.List > .CheckBoxContainer button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .List > .CardsContainer {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
